@@ -6,7 +6,7 @@ const port = 3000
 require('dotenv').config()
 
 app.use(express.json())
-app.use(cors({origin: 'http://127.0.0.1:5500'}))
+// app.use(cors({origin: 'http://127.0.0.1:5500'}))
 app.use(express.urlencoded({extended: true}))
 
 const GEOCODING_API = process.env.GEOKEY
