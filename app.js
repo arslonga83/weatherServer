@@ -6,7 +6,7 @@ const port = 3000
 require('dotenv').config()
 
 app.use(express.json())
-app.use(cors({origin: 'https://arslonga83.github.io/nwsWeather/'}))
+app.use(cors({origin: 'https://arslonga83.github.io'}))
 app.use(express.urlencoded({extended: true}))
 
 const GEOCODING_API = process.env.GEOKEY
