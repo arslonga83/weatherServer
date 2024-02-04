@@ -15,6 +15,10 @@ app.get('/', (req,res) => {
   res.send('Weather Server is Live.')
 })
 
+app.get('/wakeup', (req, res) => {
+  res.send('Server is awake.')
+})
+
 // THIS RETURNS 'lat' and 'lng'. Request body should contain {"address": "city, state"}
 app.post('/', (req, res) => {
   console.log(req.body)
